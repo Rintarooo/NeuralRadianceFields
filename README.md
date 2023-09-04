@@ -119,3 +119,11 @@ in more spurious rendering which reflects as flickering in the rendering (can be
 But what I find worth-noting is the fact that the network parameters had to increase more than 4 times in number 
 for what doesn't seem like a lot of improvement visually. This again points towards how the computation requirement 
 for training can scale significantly even for small improvements in rendering quality.
+
+## Usage
+```bash
+docker-compose -f .devcontainer/docker-compose.yml build nerf-volume
+xhost local:root
+docker-compose -f .devcontainer/docker-compose.yml run --rm nerf-volume /bin/bash
+
+```

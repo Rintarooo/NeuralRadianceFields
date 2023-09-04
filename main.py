@@ -9,10 +9,10 @@ import imageio
 
 from omegaconf import DictConfig
 from PIL import Image
-from pytorch3d.renderer import (
-    PerspectiveCameras,
-    look_at_view_transform
-)
+# from pytorch3d.renderer import (
+#     PerspectiveCameras,
+#     look_at_view_transform
+# )
 import matplotlib.pyplot as plt
 
 from implicit import volume_dict
